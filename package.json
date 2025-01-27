@@ -1,0 +1,80 @@
+{
+  "name": "astro-minify-html-swc",
+  "type": "module",
+  "version": "0.1.1",
+  "packageManager": "pnpm@9.15.4",
+  "description": "An Astro integration that minifies HTML",
+  "author": "ocavue <ocavue@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/astro-minify-html-swc#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/astro-minify-html-swc.git"
+  },
+  "bugs": "https://github.com/ocavue/astro-minify-html-swc/issues",
+  "keywords": [
+    "astro",
+    "withastro",
+    "astro-integration",
+    "astro-component",
+    "SWC",
+    "minify",
+    "compression",
+    "compress",
+    "html",
+    "CSS",
+    "JavaScript",
+    "performance",
+    "optimization"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint .",
+    "fix": "eslint --fix . && prettier --write .",
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@swc/html": "^1.10.9",
+    "fast-glob": "^3.3.3"
+  },
+  "devDependencies": {
+    "@ocavue/eslint-config": "^2.12.2",
+    "@ocavue/tsconfig": "^0.2.0",
+    "@types/node": "^20.17.5",
+    "astro": "^5.1.9",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.2"
+  },
+  "renovate": {
+    "extends": [
+      "github>ocavue/config-renovate"
+    ]
+  }
+}
