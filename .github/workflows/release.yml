@@ -13,17 +13,6 @@ jobs:
   version:
     runs-on: ubuntu-latest
     steps:
-
-      # Workaround for https://github.com/googleapis/release-please-action/issues/1074
-      - name: Add labels to the repository if not present
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh label create "autorelease: pending" || true
-          gh label create "autorelease: tagged" || true
-          gh label create "autorelease: snapshot" || true
-          gh label create "autorelease: published" || true
-              
       - uses: googleapis/release-please-action@v4
         id: release-please
         with:
