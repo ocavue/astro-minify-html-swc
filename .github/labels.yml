@@ -1,0 +1,13 @@
+# .github/labels.yml
+- name: "autorelease: pending"
+  color: "d73a4a"
+  description: "Pending release"
+- name: "autorelease: tagged"
+  color: "d4c5f9"
+  description: "Ready for release"
+- name: "autorelease: snapshot"
+  color: "d4c5f9"
+  description: "Ready for release"
+- name: "autorelease: published"
+  color: "0e8a16"
+  description: "Released"
