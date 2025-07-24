@@ -21,6 +21,9 @@ importers:
       '@ocavue/tsconfig':
         specifier: ^0.3.7
         version: 0.3.7
+      '@ocavue/utils':
+        specifier: ^0.6.0
+        version: 0.6.0
       '@types/node':
         specifier: ^20.17.5
         version: 20.19.9
@@ -565,6 +568,9 @@ packages:
 
   '@ocavue/tsconfig@0.3.7':
     resolution: {integrity: sha512-eHvgeLxI4jxoTpp63uM5+Vt44ioQRUxb2wwEQcdBFnd/KGNvf4dRmDfGtghhFmTuwpXbAD12wMSIuTlwauExww==}
+
+  '@ocavue/utils@0.6.0':
+    resolution: {integrity: sha512-ulsUYE5EvGIFvSyjPb57KoZ2WgztgIYgHL4n0/zvSeqo3VZUVeMpIq8tsAe9IQvFMQHnKa3Nzl+8QfZ03/sIKQ==}
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
@@ -3827,6 +3833,8 @@ snapshots:
       - typescript
 
   '@ocavue/tsconfig@0.3.7': {}
+
+  '@ocavue/utils@0.6.0': {}
 
   '@oslojs/encoding@1.1.0': {}
 

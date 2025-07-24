@@ -65,6 +65,7 @@
   "devDependencies": {
     "@ocavue/eslint-config": "^3.2.0",
     "@ocavue/tsconfig": "^0.3.7",
+    "@ocavue/utils": "^0.6.0",
     "@types/node": "^20.17.5",
     "astro": "^5.12.3",
     "eslint": "^9.31.0",
