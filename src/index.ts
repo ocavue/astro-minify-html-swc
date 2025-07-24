@@ -2,10 +2,10 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { formatBytes } from '@ocavue/utils'
 import type * as SWC from '@swc/html'
 import type { AstroIntegration, AstroIntegrationLogger } from 'astro'
 import glob from 'fast-glob'
-import { formatBytes } from '@ocavue/utils'
 
 type SizeChange = [sizeBefore: number, sizeAfter: number]
 
