@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ocavue/utils':
+        specifier: ^0.6.0
+        version: 0.6.0
       '@swc/html':
         specifier: ^1.13.2
         version: 1.13.2
@@ -21,9 +24,6 @@ importers:
       '@ocavue/tsconfig':
         specifier: ^0.3.7
         version: 0.3.7
-      '@ocavue/utils':
-        specifier: ^0.6.0
-        version: 0.6.0
       '@types/node':
         specifier: ^20.17.5
         version: 20.19.9
