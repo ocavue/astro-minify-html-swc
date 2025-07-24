@@ -5,14 +5,13 @@ inputs:
   node-version:
     description: The version of node.js
     required: false
-    default: '18'
+    default: '22'
 
 runs:
   using: composite
   steps:
     - name: Install pnpm
-      run: corepack enable
-      shell: bash
+      uses: pnpm/action-setup@v4
 
     - name: Setup node
       uses: actions/setup-node@v4

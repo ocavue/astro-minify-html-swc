@@ -2,22 +2,12 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { formatBytes } from '@ocavue/utils'
 import type * as SWC from '@swc/html'
 import type { AstroIntegration, AstroIntegrationLogger } from 'astro'
 import glob from 'fast-glob'
 
 type SizeChange = [sizeBefore: number, sizeAfter: number]
-
-function formatBytes(bytes: number): string {
-  const units = ['B', 'KB', 'MB', 'GB']
-  let unitIndex = 0
-  let value = bytes
-  while (Math.abs(value) >= 1024 && unitIndex < units.length - 1) {
-    value /= 1024
-    unitIndex++
-  }
-  return `${value.toFixed(1)}${units[unitIndex]}`
-}
 
 function formatSizeChange([sizeBefore, sizeAfter]: SizeChange): string {
   const diff = sizeAfter - sizeBefore
