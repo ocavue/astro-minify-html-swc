@@ -20,6 +20,7 @@ async function compress(
   minify: typeof SWC.minify,
   dirPath: string,
   filePath: string,
+  isDebug: boolean,
 ): Promise<SizeChange> {
   try {
     const fullPath = path.join(dirPath, filePath)
@@ -39,7 +40,9 @@ async function compress(
 
     await fs.writeFile(fullPath, textAfter, 'utf-8')
 
-    logger.debug(`${formatSizeChange([sizeBefore, sizeAfter])} ${filePath}`)
+    if (isDebug) {
+      logger.debug(`${formatSizeChange([sizeBefore, sizeAfter])} ${filePath}`)
+    }
 
     return [sizeBefore, sizeAfter]
   } catch (error) {
@@ -64,19 +67,23 @@ export default function integration(): AstroIntegration {
 
         const { minify } = await import('@swc/html')
 
+        const isDebug = logger.options.level === 'debug'
+
         const sizeChanges = await Promise.all(
           filePaths.map((filePath) => {
-            return compress(logger, minify, dirPath, filePath)
+            return compress(logger, minify, dirPath, filePath, isDebug)
           }),
         )
-        const sizeChange = sizeChanges.reduce<SizeChange>(
-          (a, b) => [a[0] + b[0], a[1] + b[1]],
-          [0, 0],
-        )
+
+        const totalSizeChange: SizeChange = [0, 0]
+        for (const sizeChange of sizeChanges) {
+          totalSizeChange[0] += sizeChange[0]
+          totalSizeChange[1] += sizeChange[1]
+        }
 
         const timeEnd = performance.now()
         logger.info(
-          `${formatSizeChange(sizeChange)} Compressed ${filePaths.length} HTML files in ${Math.round(timeEnd - timeStart)}ms`,
+          `${formatSizeChange(totalSizeChange)} Compressed ${filePaths.length} HTML files in ${Math.round(timeEnd - timeStart)}ms`,
         )
       },
     },
