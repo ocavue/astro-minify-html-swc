@@ -1,7 +1,7 @@
 {
   "name": "astro-minify-html-swc",
   "type": "module",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "packageManager": "pnpm@10.17.1",
   "description": "An Astro integration that minifies HTML",
   "author": "ocavue <ocavue@gmail.com>",
