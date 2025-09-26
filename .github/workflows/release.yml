@@ -5,10 +5,6 @@ on:
     branches:
       - master
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   version:
     runs-on: ubuntu-latest
@@ -22,6 +18,9 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     needs: [version]
     if: ${{ needs.version.outputs.release_created }}
     steps:
@@ -34,5 +33,3 @@ jobs:
 
       - name: Publish to NPM
         run: pnpm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
