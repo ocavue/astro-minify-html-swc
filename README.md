@@ -6,7 +6,7 @@ An [Astro integration](https://docs.astro.build/guides/integrations-guide/) that
 
 ## Why 
 
-Astro minifies HTML/CSS/JS by default. However, this is not true for the [`is:inline`](https://docs.astro.build/en/reference/directives-reference/#isinline) directive. 
+Astro minifies HTML/CSS/JS by default. However, this is not true for the [`is:inline`](https://docs.astro.build/en/reference/directives-reference/#isinline) directive or [comment in your .astro file](https://docs.astro.build/en/reference/astro-syntax/#comments). This integration minifies these as well, making your site even faster!
 
 **Before:**
 
