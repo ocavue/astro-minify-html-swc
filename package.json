@@ -2,7 +2,7 @@
   "name": "astro-minify-html-swc",
   "type": "module",
   "version": "0.1.7",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.17.1",
   "description": "An Astro integration that minifies HTML",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -60,15 +60,15 @@
   },
   "dependencies": {
     "@ocavue/utils": "^0.7.1",
-    "@swc/html": "^1.13.5",
+    "@swc/html": "^1.13.19",
     "fast-glob": "^3.3.3"
   },
   "devDependencies": {
-    "@ocavue/eslint-config": "^3.3.3",
-    "@ocavue/tsconfig": "^0.4.0",
+    "@ocavue/eslint-config": "^3.4.0",
+    "@ocavue/tsconfig": "^0.5.0",
     "@types/node": "^20.17.5",
-    "astro": "^5.13.5",
-    "eslint": "^9.32.0",
+    "astro": "^5.14.0",
+    "eslint": "^9.34.0",
     "prettier": "^3.6.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"
