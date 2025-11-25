@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/ocavue/astro-minify-html-swc/compare/v0.1.9...v0.1.10) (2025-11-25)
+
+
+### Bug Fixes
+
+* update dependency ([#34](https://github.com/ocavue/astro-minify-html-swc/issues/34)) ([703da29](https://github.com/ocavue/astro-minify-html-swc/commit/703da2932455100f001ccf82b7aefd0f965f0778))
+
 ## [0.1.9](https://github.com/ocavue/astro-minify-html-swc/compare/v0.1.8...v0.1.9) (2025-11-25)
 
 
