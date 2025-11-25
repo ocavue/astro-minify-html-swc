@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ocavue/utils':
-        specifier: ^0.9.0
-        version: 0.9.0
+        specifier: ^1.0.0
+        version: 1.0.0
       '@swc/html':
         specifier: ^1.15.3
         version: 1.15.3
@@ -550,8 +550,8 @@ packages:
   '@ocavue/tsconfig@0.6.1':
     resolution: {integrity: sha512-HCGHOT7S8nb7D/CP0FRYUt+IpYvnVu0fCPF9FE7BbXiJeg6UKB7wRINGq7cIGhWRDuQxpJ4tfVT9awi81z8bHw==}
 
-  '@ocavue/utils@0.9.0':
-    resolution: {integrity: sha512-aPQK0NP4noULYJ3jvYoS+lPqg6FiHtarqqMG+eQlKmVpU5oCWD1qoMj6ffrCpNLoRF/CGTSq5lopSxIY2RH0Jg==}
+  '@ocavue/utils@1.0.0':
+    resolution: {integrity: sha512-SO2E0WtmpW66IxEzt15A05xlATek5bOtnm3Eg+R+6YI6InO3CytGMVUOc6jg9RxVLZc67ieJW1uDi/JM8QWIPQ==}
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
@@ -3812,7 +3812,7 @@ snapshots:
 
   '@ocavue/tsconfig@0.6.1': {}
 
-  '@ocavue/utils@0.9.0': {}
+  '@ocavue/utils@1.0.0': {}
 
   '@oslojs/encoding@1.1.0': {}
 

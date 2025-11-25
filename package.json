@@ -60,7 +60,7 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@ocavue/utils": "^0.9.0",
+    "@ocavue/utils": "^1.0.0",
     "@swc/html": "^1.15.3",
     "fast-glob": "^3.3.3"
   },
