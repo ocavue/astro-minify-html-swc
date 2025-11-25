@@ -71,7 +71,7 @@
     "astro": "^5.16.0",
     "eslint": "^9.38.0",
     "prettier": "^3.6.2",
-    "tsdown": "^0.16.6",
+    "tsdown": "^0.16.7",
     "typescript": "^5.9.3"
   }
 }

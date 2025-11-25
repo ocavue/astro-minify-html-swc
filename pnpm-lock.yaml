@@ -37,8 +37,8 @@ importers:
         specifier: ^3.6.2
         version: 3.6.2
       tsdown:
-        specifier: ^0.16.6
-        version: 0.16.6(synckit@0.11.11)(typescript@5.9.3)
+        specifier: ^0.16.7
+        version: 0.16.7(synckit@0.11.11)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -2914,13 +2914,13 @@ packages:
       typescript:
         optional: true
 
-  tsdown@0.16.6:
-    resolution: {integrity: sha512-g3xHEnGdfwJTlXhEkqww3Q/KlCfyNFw4rnzuQ9Gqw8T2xjDYrw94qmSw5wYYTAW5zV1sEfWDlfgxZo5mmtu0NQ==}
+  tsdown@0.16.7:
+    resolution: {integrity: sha512-3rGG74MGc16rJ70ID7WyKnJBM5TIqGX5uYbmUCdiFIc2c3+KXka4nCeji3RRxhBw/hL7Xbs8pCY8x2cn0J+O0w==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
-      '@vitejs/devtools': ^0.0.0-alpha.17
+      '@vitejs/devtools': ^0.0.0-alpha.18
       publint: ^0.3.0
       typescript: ^5.0.0
       unplugin-lightningcss: ^0.4.0
@@ -6712,7 +6712,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  tsdown@0.16.6(synckit@0.11.11)(typescript@5.9.3):
+  tsdown@0.16.7(synckit@0.11.11)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
