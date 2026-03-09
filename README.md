@@ -4,11 +4,13 @@
 
 An [Astro integration](https://docs.astro.build/guides/integrations-guide/) that minifies HTML (including inline scripts and styles) using [SWC](https://swc.rs/) 🦀. It's fast! 🚀
 
-## Why 
+## Why
 
 Astro minifies HTML/CSS/JS by default, but not content within the [`is:inline`](https://docs.astro.build/en/reference/directives-reference/#isinline) directive or [comments in your .astro files](https://docs.astro.build/en/reference/astro-syntax/#comments). This integration fills that gap, minifying everything to make your site even faster!
 
 **Before:**
+
+<!-- prettier-ignore-start -->
 
 ```html
 <!DOCTYPE html>
@@ -57,7 +59,12 @@ Astro minifies HTML/CSS/JS by default, but not content within the [`is:inline`](
 </script>
 ```
 
+<!-- prettier-ignore-end -->
+
 **After:**
+
+<!-- prettier-ignore-start -->
+
 
 ```html
 <!doctype html>
@@ -79,6 +86,8 @@ Astro minifies HTML/CSS/JS by default, but not content within the [`is:inline`](
 <meta name=description content="Get started building your docs site with Starlight.">
 <script>window.StarlightThemeProvider=(()=>{let e="undefined"!=typeof localStorage&&localStorage.getItem("starlight-theme"),t=e||(window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");return document.documentElement.dataset.theme="light"===t?"light":"dark",{updatePickers(t=e||"auto"){document.querySelectorAll("starlight-theme-select").forEach(e=>{let l=e.querySelector("select");l&&(l.value=t);let r=document.querySelector("#theme-icons"),o=r&&r.content.querySelector("."+t);if(o){let t=e.querySelector("svg.label-icon");t&&t.replaceChildren(...o.cloneNode(!0).childNodes)}})}}})()</script>
 ```
+
+<!-- prettier-ignore-end -->
 
 ## Installation
 
@@ -107,4 +116,3 @@ export default defineConfig({
 ## License
 
 MIT
-
