@@ -56,7 +56,7 @@
     "dev": "tsdown --watch",
     "lint": "eslint .",
     "fix": "eslint --fix . && prettier --write .",
-    "test": "vitest run",
+    "test": "vitest",
     "prepublishOnly": "pnpm run build",
     "typecheck": "tsc -b"
   },
@@ -69,7 +69,7 @@
     "@ocavue/eslint-config": "^4.3.0",
     "@ocavue/tsconfig": "^0.6.1",
     "@types/node": "^24.12.0",
-    "astro": "^5.16.0",
+    "astro": "^6.0.0-beta.1",
     "eslint": "^10.0.3",
     "prettier": "^3.6.2",
     "tinyexec": "^1.0.2",
