@@ -9,27 +9,29 @@
     <style>
       body {
         div {
+          /* Comment in style */
           color: red;
         }
       }
     </style>
-
     <style is:inline>
       body {
         div {
+          /* Comment in inline style */
           background-color: white;
         }
       }
     </style>
   </head>
   <body>
-    <!-- This is a comment that should be removed -->
     <div>
+      <!-- Comment in div -->
       <p>Hello, world!</p>
     </div>
     <script>
       ;(() => {
         let moduleScript = () => {
+        // Comment in script
           console.log('This is a module script.')
         }
         moduleScript()
@@ -39,6 +41,7 @@
     <script is:inline>
       ;(() => {
         let inlineScript = () => {
+        // Comment in inline script
           console.log('This is an inline script.')
         }
         inlineScript()
