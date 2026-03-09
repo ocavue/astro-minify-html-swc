@@ -8,8 +8,8 @@ const fixtureDir = path.resolve(import.meta.dirname, 'fixture')
 const outputFile = path.join(fixtureDir, 'dist', 'index.html')
 
 async function build(env: Record<string, string> = {}) {
-  await x('npx', ['astro', 'build'], {
-    nodeOptions: { cwd: fixtureDir, env: { ...process.env, ...env } },
+  await x('./node_modules/.bin/astro', ['build'], {
+    nodeOptions: { cwd: fixtureDir, env },
     throwOnError: true,
   })
   return fs.readFileSync(outputFile, 'utf-8')
