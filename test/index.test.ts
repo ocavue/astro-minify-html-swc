@@ -28,8 +28,8 @@ describe('astro-minify-html-swc', () => {
                 background-color: white;
               }
             }
-          </style><style>body{div{color:red}}
-      </style></head> <body data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <!-- Comment in div --> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type="module">(()=>{console.log("This is a module script.")})();</script> <script>
+          </style><style>body{div[data-astro-cid-j7pv25f6]{color:red}}
+      </style></head> <body data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <!-- Comment in div --> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type="module">console.log("This is a module script.");</script> <script>
             ;(() => {
               let inlineScript = () => {
                 // Comment in inline script
@@ -40,7 +40,7 @@ describe('astro-minify-html-swc', () => {
           </script> </body> </html>"
     `)
     expect(minified).toMatchInlineSnapshot(
-      `"<!doctype html><html lang=en data-astro-cid-j7pv25f6><meta charset=utf-8><title>Test Page</title><style>body{& div{background-color:#fff}}body{& div{color:red}}</style><body data-astro-cid-j7pv25f6><div data-astro-cid-j7pv25f6> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type=module>console.log("This is a module script.")</script> <script>console.log("This is an inline script.")</script>"`,
+      `"<!doctype html><html lang=en data-astro-cid-j7pv25f6><meta charset=utf-8><title>Test Page</title><style>body{& div{background-color:#fff}}body{& div[data-astro-cid-j7pv25f6]{color:red}}</style><body data-astro-cid-j7pv25f6><div data-astro-cid-j7pv25f6> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type=module>console.log("This is a module script.")</script> <script>console.log("This is an inline script.")</script>"`,
     )
 
     expect(minified.length).toBeLessThan(original.length)
