@@ -23,6 +23,7 @@ describe('astro-minify-html-swc', () => {
     expect(minified.length).toBeLessThan(original.length)
     expect(original).toContain('<!--')
     expect(minified).not.toContain('<!--')
-    expect(minified).toMatchSnapshot()
+    expect(original).toMatchSnapshot('original')
+    expect(minified).toMatchSnapshot('minified')
   })
 })
