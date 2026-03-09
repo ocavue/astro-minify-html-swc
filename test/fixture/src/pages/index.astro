@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <html lang="en">
@@ -7,21 +8,41 @@
     <title>Test Page</title>
     <style>
       body {
-        color: red;
-        background-color: white;
+        div {
+          color: red;
+        }
+      }
+    </style>
+
+    <style is:inline>
+      body {
+        div {
+          background-color: white;
+        }
       }
     </style>
   </head>
   <body>
     <!-- This is a comment that should be removed -->
     <div>
-      <p>Hello,     world!</p>
+      <p>Hello, world!</p>
     </div>
     <script>
-      const x = 1;
-      const y = 2;
-      const z = x + y;
-      console.log(z);
+      ;(() => {
+        let moduleScript = () => {
+          console.log('This is a module script.')
+        }
+        moduleScript()
+      })()
+    </script>
+
+    <script is:inline>
+      ;(() => {
+        let inlineScript = () => {
+          console.log('This is an inline script.')
+        }
+        inlineScript()
+      })()
     </script>
   </body>
 </html>

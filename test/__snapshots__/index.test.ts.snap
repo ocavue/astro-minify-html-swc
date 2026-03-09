@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`astro-minify-html-swc > should minify HTML output 1`] = `"<!doctype html><html lang=en data-astro-cid-j7pv25f6><meta charset=utf-8><title>Test Page</title><style>body{color:red;background-color:#fff}</style><body data-astro-cid-j7pv25f6><div data-astro-cid-j7pv25f6> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type=module>console.log(3)</script>"`;
