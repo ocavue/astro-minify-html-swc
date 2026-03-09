@@ -60,8 +60,8 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@ocavue/utils": "^1.0.0",
-    "@swc/html": "^1.15.3",
+    "@ocavue/utils": "^1.5.0",
+    "@swc/html": "^1.15.18",
     "fast-glob": "^3.3.3"
   },
   "devDependencies": {
