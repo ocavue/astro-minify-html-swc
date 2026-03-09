@@ -1,0 +1,9 @@
+{
+  "name": "test-fixture",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "astro": "^5.16.0",
+    "astro-minify-html-swc": "workspace:*"
+  }
+}
