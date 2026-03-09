@@ -56,7 +56,7 @@
     "dev": "tsdown --watch",
     "lint": "eslint .",
     "fix": "eslint --fix . && prettier --write .",
-    "test": "vitest run",
+    "test": "vitest",
     "prepublishOnly": "pnpm run build",
     "typecheck": "tsc -b"
   },
