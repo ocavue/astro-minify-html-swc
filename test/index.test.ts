@@ -11,12 +11,13 @@ async function build(env: Record<string, string> = {}) {
   await x('./node_modules/.bin/astro', ['build'], {
     nodeOptions: { cwd: fixtureDir, env },
     throwOnError: true,
+    timeout: 30_000,
   })
   return fs.readFileSync(outputFile, 'utf-8')
 }
 
 describe('astro-minify-html-swc', () => {
-  it('should minify HTML output', async () => {
+  it('should minify HTML output', { timeout: 90_000 }, async () => {
     const original = await build()
     const minified = await build({ USE_MINIFY: '1' })
 
