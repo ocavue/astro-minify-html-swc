@@ -22,20 +22,20 @@ importers:
         specifier: ^4.3.0
         version: 4.3.0(@types/estree@1.0.8)(@typescript-eslint/parser@8.56.1(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/rule-tester@8.56.1(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/typescript-estree@8.56.1(typescript@5.9.3))(@typescript-eslint/utils@8.56.1(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(eslint@10.0.3(jiti@2.6.1))(jsonc-eslint-parser@2.4.0)(typescript@5.9.3)
       '@ocavue/tsconfig':
-        specifier: ^0.6.1
-        version: 0.6.1
+        specifier: ^0.7.0
+        version: 0.7.0
       '@types/node':
         specifier: ^24.12.0
         version: 24.12.0
       astro:
-        specifier: ^6.0.0-beta.1
+        specifier: ^6.0.0-beta.20
         version: 6.0.0-beta.20(@types/node@24.12.0)(jiti@2.6.1)(rollup@4.52.2)(typescript@5.9.3)
       eslint:
         specifier: ^10.0.3
         version: 10.0.3(jiti@2.6.1)
       prettier:
-        specifier: ^3.6.2
-        version: 3.6.2
+        specifier: ^3.8.1
+        version: 3.8.1
       tinyexec:
         specifier: ^1.0.2
         version: 1.0.2
@@ -52,7 +52,7 @@ importers:
   test/fixture:
     dependencies:
       astro:
-        specifier: ^6.0.0-beta.1
+        specifier: ^6.0.0-beta.20
         version: 6.0.0-beta.20(@types/node@24.12.0)(jiti@2.6.1)(rollup@4.52.2)(typescript@5.9.3)
       astro-minify-html-swc:
         specifier: workspace:*
@@ -633,8 +633,8 @@ packages:
   '@ocavue/eslint-config@4.3.0':
     resolution: {integrity: sha512-vTkNtzIzXqYsy1ydLaJDMoAK7l7M9SvJ23Jmoc3bLhvmxEDlM4q0EV0TIJ1XNHZasP7ef5sBr9h9xJmSlA8NdA==}
 
-  '@ocavue/tsconfig@0.6.1':
-    resolution: {integrity: sha512-HCGHOT7S8nb7D/CP0FRYUt+IpYvnVu0fCPF9FE7BbXiJeg6UKB7wRINGq7cIGhWRDuQxpJ4tfVT9awi81z8bHw==}
+  '@ocavue/tsconfig@0.7.0':
+    resolution: {integrity: sha512-9XQKdECB9dGLoLCYZozOZ8RH7OuWJosdp0t9l5bEvoFGitorrVG/XRsB0LqKICekmQxpDNjhQ+teOGYdmEb3SA==}
 
   '@ocavue/utils@1.5.0':
     resolution: {integrity: sha512-zYOKnvUm8IQ86tNCrpUVBT0lEvoKvyf+9pPS7M4VDB8O1o+msaPMsb/xZx/w5hpcuN1dfehJrkY41ZcdGZpyqg==}
@@ -2208,8 +2208,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.6.2:
-    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3426,7 +3426,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@ocavue/tsconfig@0.6.1': {}
+  '@ocavue/tsconfig@0.7.0': {}
 
   '@ocavue/utils@1.5.0': {}
 
@@ -5291,7 +5291,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.6.2: {}
+  prettier@3.8.1: {}
 
   prismjs@1.30.0: {}
 
