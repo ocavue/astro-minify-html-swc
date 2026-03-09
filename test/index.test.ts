@@ -32,7 +32,7 @@ describe('astro-minify-html-swc', () => {
       </style></head> <body data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <!-- Comment in div --> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type="module">(()=>{console.log("This is a module script.")})();</script> <script>
             ;(() => {
               let inlineScript = () => {
-              // Comment in inline script
+                // Comment in inline script
                 console.log('This is an inline script.')
               }
               inlineScript()
