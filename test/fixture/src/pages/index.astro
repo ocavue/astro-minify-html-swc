@@ -1,0 +1,51 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Page</title>
+    <style>
+      body {
+        div {
+          /* Comment in style */
+          color: red;
+        }
+      }
+    </style>
+    <style is:inline>
+      body {
+        div {
+          /* Comment in inline style */
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Comment in div -->
+      <p>Hello, world!</p>
+    </div>
+    <script>
+      ;(() => {
+        let moduleScript = () => {
+          // Comment in script
+          console.log('This is a module script.')
+        }
+        moduleScript()
+      })()
+    </script>
+
+    <script is:inline>
+      ;(() => {
+        let inlineScript = () => {
+          // Comment in inline script
+          console.log('This is an inline script.')
+        }
+        inlineScript()
+      })()
+    </script>
+  </body>
+</html>

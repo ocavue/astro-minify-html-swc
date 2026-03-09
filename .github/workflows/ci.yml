@@ -17,6 +17,9 @@ jobs:
 
       - uses: ./.github/actions/setup
 
+      - name: Build
+        run: pnpm run build
+
       - name: Lint
         run: pnpm run lint
 
@@ -27,5 +30,21 @@ jobs:
 
       - uses: ./.github/actions/setup
 
+      - name: Build
+        run: pnpm run build
+
       - name: Typecheck
         run: pnpm run typecheck
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: ./.github/actions/setup
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Test
+        run: pnpm run test
