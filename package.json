@@ -61,20 +61,20 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@ocavue/utils": "^1.5.0",
-    "@swc/html": "^1.15.18",
+    "@ocavue/utils": "^1.6.0",
+    "@swc/html": "^1.15.33",
     "fast-glob": "^3.3.3"
   },
   "devDependencies": {
-    "@ocavue/eslint-config": "^4.3.0",
+    "@ocavue/eslint-config": "^4.5.7",
     "@ocavue/tsconfig": "^0.7.1",
     "@types/node": "^24.12.0",
     "astro": "^6.3.2",
-    "eslint": "^10.0.3",
-    "prettier": "^3.8.1",
-    "tinyexec": "^1.0.2",
-    "tsdown": "^0.21.2",
+    "eslint": "^10.3.0",
+    "prettier": "^3.8.3",
+    "tinyexec": "^1.1.2",
+    "tsdown": "^0.22.0",
     "typescript": "^6.0.3",
-    "vitest": "^4.0.18"
+    "vitest": "^4.1.6"
   }
 }
