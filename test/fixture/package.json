@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "astro": "^6.3.0",
+    "astro": "^6.3.1",
     "astro-minify-html-swc": "workspace:*"
   }
 }
