@@ -4,7 +4,7 @@ export default defineConfig({
   entry: ['src/index.ts'],
   format: ['esm'],
 
-  dts: { build: true  },
+  dts: { build: true },
   fixedExtension: false,
-  deps: { neverBundle: ['astro', 'typescript', 'postcss'] } ,
+  deps: { neverBundle: ['astro', 'typescript', 'postcss'] },
 })
