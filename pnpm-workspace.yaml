@@ -2,7 +2,5 @@ allowBuilds:
   esbuild: false
   sharp: false
 ignoreWorkspaceRootCheck: true
-minimumReleaseAgeExclude:
-  - astro@7.0.3
 packages:
   - test/fixture
