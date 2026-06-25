@@ -22,15 +22,15 @@ describe('astro-minify-html-swc', () => {
     const minified = await build({ USE_MINIFY: '1' })
 
     expect(original).toMatchInlineSnapshot(`
-      "<!DOCTYPE html><html lang="en" data-astro-cid-j7pv25f6> <head><meta charset="utf-8"><title>Test Page</title><style>
+      "<!DOCTYPE html><html lang="en" data-astro-cid-lcdefpme><head><meta charset="utf-8"><title>Test Page</title><style>
             body {
               div {
                 /* Comment in inline style */
                 background-color: white;
               }
             }
-          </style><style>body{div{color:red}}
-      </style></head> <body data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <!-- Comment in div --> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type="module">console.log("This is a module script.");</script> <script>
+          </style><style>body{& div{color:red}}
+      </style></head><body data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><!-- Comment in div --><p data-astro-cid-lcdefpme>Hello, world!</p></div><script type="module">console.log(\`This is a module script.\`);</script><script>
             ;(() => {
               let inlineScript = () => {
                 // Comment in inline script
@@ -38,10 +38,10 @@ describe('astro-minify-html-swc', () => {
               }
               inlineScript()
             })()
-          </script> </body> </html>"
+          </script></body></html>"
     `)
     expect(minified).toMatchInlineSnapshot(
-      `"<!doctype html><html lang=en data-astro-cid-j7pv25f6><meta charset=utf-8><title>Test Page</title><style>body{& div{background-color:#fff}}body{& div{color:red}}</style><body data-astro-cid-j7pv25f6><div data-astro-cid-j7pv25f6> <p data-astro-cid-j7pv25f6>Hello, world!</p> </div> <script type=module>console.log("This is a module script.")</script> <script>console.log("This is an inline script.")</script>"`,
+      `"<!doctype html><html lang=en data-astro-cid-lcdefpme><meta charset=utf-8><title>Test Page</title><style>body{& div{background-color:#fff}}body{& div{color:red}}</style><body data-astro-cid-lcdefpme><div data-astro-cid-lcdefpme><p data-astro-cid-lcdefpme>Hello, world!</div><script type=module>console.log("This is a module script.")</script><script>console.log("This is an inline script.")</script>"`,
     )
 
     expect(minified.length).toBeLessThan(original.length)
